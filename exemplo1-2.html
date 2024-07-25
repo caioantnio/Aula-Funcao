@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - Function</title>
+</head>
+<body>
+    <h1>Exemplo 1</h1>
+    <h2>Funções</h2>
+    <p>Criar uma função que multiplica dois números e retorna o resultado para uma variável.</p>
+    <p><h2>Versão 2:</h2> O usuário vai digitar dois valores em caixas input, clicar no botão multiplicar e mostrar o resulado</p>
+
+    Número 1: <input id="c1">  
+    Número 2: <input id="c2">
+
+    <br><br>
+
+    <button type="button" onclick="multiplicar()">Multiplicar</button>
+
+    <p id="resultado" style="font-weight: bold;"></p>
+
+    <script>
+        function multiplicar(){
+            let n1 = document.getElementById("c1").value;
+            let n2 = document.getElementById("c2").value;
+            let x = multiplica(n1,n2)
+            document.getElementById("resultado").innerHTML = x;
+
+            function multiplica(a,b){
+                return a*b;
+            }}
+    </script>
+</body>
+</html>
